@@ -1,0 +1,5 @@
+.DS_Store
+*.b64
+_tmp_*
+.vercel
+node_modules
