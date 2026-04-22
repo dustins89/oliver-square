@@ -732,20 +732,21 @@
       <!-- Contact form -->
       <div class="bg-stone-800 rounded-lg p-8">
         <h3 class="text-2xl font-semibold mb-6 text-center">Send a Leasing Inquiry</h3>
-        <form id="leasing-form" action="mailto:info@3riversrentals.com" method="post" enctype="text/plain" class="space-y-4">
+        <form id="leasing-form" class="space-y-4" novalidate onsubmit="return submitLeasingForm(event)">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" name="name" placeholder="Your Name *" required
+            <input type="text" id="lf-name" name="name" autocomplete="name" placeholder="Your Name *" required
               class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
-            <input type="tel" name="phone" placeholder="Phone Number *" required
+            <input type="tel" id="lf-phone" name="phone" autocomplete="tel" placeholder="Phone Number *" required
               class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
           </div>
-          <input type="email" name="email" placeholder="Email Address"
+          <input type="email" id="lf-email" name="email" autocomplete="email" placeholder="Email Address"
             class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
-          <textarea name="message" rows="4" placeholder="Tell us about your business and space requirements..." required
+          <textarea id="lf-message" name="message" rows="4" placeholder="Tell us about your business and space requirements..." required
             class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700"></textarea>
           <button type="submit" class="w-full bg-green-800 hover:bg-green-900 text-white font-medium py-3 rounded transition-colors">
             Send Inquiry
           </button>
+          <p class="text-xs text-stone-400 text-center">Clicking Send Inquiry opens your email client with the message pre-filled.</p>
           <p id="form-status" class="text-center text-sm hidden"></p>
         </form>
       </div>
@@ -823,5 +824,37 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
+
+  <script>
+    function submitLeasingForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('lf-name').value.trim();
+      const phone = document.getElementById('lf-phone').value.trim();
+      const email = document.getElementById('lf-email').value.trim();
+      const msg = document.getElementById('lf-message').value.trim();
+      if (!name || !phone || !msg) {
+        alert('Please fill in your name, phone number, and a message.');
+        return false;
+      }
+      const subject = 'Leasing Inquiry from ' + name + ' — Oliver Square';
+      const bodyLines = [
+        'Name: ' + name,
+        'Phone: ' + phone,
+        'Email: ' + (email || '(not provided)'),
+        '',
+        'Message:',
+        msg,
+        '',
+        '--',
+        'Submitted via oliversq.com'
+      ];
+      const href = 'mailto:info@3riversrentals.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+      window.location.href = href;
+      const status = document.getElementById('form-status');
+      status.className = 'text-center text-sm text-green-300';
+      status.textContent = 'Opening your email client... if nothing happens, please email info@3riversrentals.com directly.';
+      return false;
+    }
+  </script>
 </body>
 </html>
