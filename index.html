@@ -92,7 +92,14 @@
         "slogan": "Secure storage, contractor bays, and retail space in the heart of Uniontown",
         "knowsAbout": ["Self storage", "RV storage", "Boat storage", "Car storage", "Contractor bays", "Vehicle storage", "Commercial leasing", "Retail leasing"],
         "parentOrganization": {"@id": "https://oliversq.com/#3-rivers-rentals"},
-        "sameAs": []
+        "sameAs": [],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "105",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
       },
       {
         "@type": "ShoppingCenter",
@@ -145,7 +152,14 @@
           {"@type": "PropertyValue", "name": "Electrical", "value": "Yes"},
           {"@type": "PropertyValue", "name": "Access", "value": "Pin pad keyless entry"},
           {"@type": "PropertyValue", "name": "Security", "value": "Site-wide camera system"}
-        ]
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "105",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
       },
       {
         "@type": "Product",
@@ -182,7 +196,14 @@
           {"@type": "PropertyValue", "name": "Electrical", "value": "Yes"},
           {"@type": "PropertyValue", "name": "Access", "value": "Pin pad keyless entry"},
           {"@type": "PropertyValue", "name": "Security", "value": "Site-wide camera system"}
-        ]
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "105",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
       },
       {
         "@type": "WebSite",
@@ -330,6 +351,16 @@
             }
           }
         ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://oliversq.com/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://oliversq.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Storage Units & Contractor Bays", "item": "https://oliversq.com/#storage"},
+          {"@type": "ListItem", "position": 3, "name": "Available Space", "item": "https://oliversq.com/#vacancies"},
+          {"@type": "ListItem", "position": 4, "name": "Tenant Directory", "item": "https://oliversq.com/#tenants"}
+        ]
       }
     ]
   }
@@ -357,10 +388,12 @@
       <a href="#" class="text-xl font-bold text-stone-900 tracking-tight" style="font-family: 'Playfair Display', serif;">
         Oliver Square
       </a>
-      <div class="hidden md:flex gap-8 text-sm font-medium text-stone-600">
+      <div class="hidden md:flex gap-6 text-sm font-medium text-stone-600">
         <a href="#about" class="hover:text-green-800">About</a>
-        <a href="#storage" class="hover:text-green-800">Storage</a>
-        <a href="#vacancies" class="hover:text-green-800">Available Space</a>
+        <a href="/rv-storage/" class="hover:text-green-800">RV Storage</a>
+        <a href="/boat-storage/" class="hover:text-green-800">Boat Storage</a>
+        <a href="/contractor-bays/" class="hover:text-green-800">Contractor Bays</a>
+        <a href="#vacancies" class="hover:text-green-800">Space</a>
         <a href="#tenants" class="hover:text-green-800">Tenants</a>
         <a href="#contact" class="hover:text-green-800">Contact</a>
       </div>
@@ -402,7 +435,7 @@
           </p>
         </div>
         <div class="md:col-span-2">
-          <img src="sign.jpg" width="900" height="1200" alt="Oliver Square Plaza sign on Oliver Road in Uniontown, PA showing tenant directory" class="w-full rounded-lg shadow-md" loading="lazy" />
+          <picture><source srcset="sign.webp" type="image/webp" /><img src="sign.jpg" width="900" height="1200" alt="Oliver Square Plaza sign on Oliver Road in Uniontown, PA showing tenant directory" class="w-full rounded-lg shadow-md" loading="lazy" /></picture>
         </div>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 text-center">
@@ -590,15 +623,15 @@
       <!-- Photo gallery -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mb-12">
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="exterior-open.jpg" width="1100" height="1467" alt="Row of storage units and contractor bays at Oliver Square in Uniontown, PA" class="w-full h-56 object-cover" loading="lazy" />
+          <picture><source srcset="exterior-open.webp" type="image/webp" /><img src="exterior-open.jpg" width="1100" height="1467" alt="Row of storage units and contractor bays at Oliver Square in Uniontown, PA" class="w-full h-56 object-cover" loading="lazy" /></picture>
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">Drive-up access — pull straight in with trucks, trailers, boats, or RVs</figcaption>
         </figure>
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="interior.jpg" width="1100" height="1467" alt="Interior of a storage bay at Oliver Square showing automatic door opener and LED lighting" class="w-full h-56 object-cover" loading="lazy" />
+          <picture><source srcset="interior.webp" type="image/webp" /><img src="interior.jpg" width="1100" height="1467" alt="Interior of a storage bay at Oliver Square showing automatic door opener and LED lighting" class="w-full h-56 object-cover" loading="lazy" /></picture>
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">Every bay includes an automatic door opener, LED lighting, and electrical</figcaption>
         </figure>
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="depth.jpg" width="1100" height="1467" alt="Open 870 sq ft storage bay showing 60 foot depth ideal for boats, RVs, and vehicles" class="w-full h-56 object-cover" loading="lazy" />
+          <picture><source srcset="depth.webp" type="image/webp" /><img src="depth.jpg" width="1100" height="1467" alt="Open 870 sq ft storage bay showing 60 foot depth ideal for boats, RVs, and vehicles" class="w-full h-56 object-cover" loading="lazy" /></picture>
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">60-ft-deep bays fit boats, work trucks, camper vans, and smaller trailers (10-ft door height)</figcaption>
         </figure>
       </div>
@@ -774,6 +807,11 @@
         Leasing: <a href="tel:412-246-4662" class="hover:text-green-400">412-246-4662</a>
         •
         <a href="mailto:info@3riversrentals.com" class="hover:text-green-400">info@3riversrentals.com</a>
+      </p>
+      <p class="mt-3">
+        <a href="/rv-storage/" class="hover:text-green-400">RV Storage</a> ·
+        <a href="/boat-storage/" class="hover:text-green-400">Boat Storage</a> ·
+        <a href="/contractor-bays/" class="hover:text-green-400">Contractor Bays</a>
       </p>
       <p class="mt-4 text-xs text-stone-600">&copy; <span id="year"></span> Oliver Square. All rights reserved.</p>
     </div>
