@@ -654,12 +654,7 @@
       <!-- Contact form -->
       <div class="bg-stone-800 rounded-lg p-8">
         <h3 class="text-2xl font-semibold mb-6 text-center">Send a Leasing Inquiry</h3>
-        <form id="leasing-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-          <input type="hidden" name="subject" value="New Leasing Inquiry — Oliver Square">
-          <input type="hidden" name="from_name" value="Oliver Square Website">
-          <input type="hidden" name="redirect" value="https://oliversq.com/?sent=1">
-          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+        <form id="leasing-form" action="mailto:info@3riversrentals.com" method="post" enctype="text/plain" class="space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="name" placeholder="Your Name *" required
               class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
