@@ -106,18 +106,22 @@
         "@type": "Product",
         "@id": "https://oliversq.com/#large-bay",
         "name": "Large Storage Bay (Units 1-11) - 870 sq ft",
-        "description": "870 sq ft drive-up storage bay (60 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for boats, RVs, work trucks with trailers, and commercial storage in Uniontown, PA.",
+        "description": "870 sq ft drive-up storage bay (60 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for boats, RVs, work trucks with trailers, and commercial storage in Uniontown, PA. Starting at $600/month.",
         "category": "Self Storage Unit",
         "brand": {"@type": "Brand", "name": "Oliver Square"},
         "image": "https://oliversq.com/depth.jpg",
         "offers": {
           "@type": "Offer",
           "url": "https://oliversq.com/#contact",
+          "price": "600.00",
           "priceCurrency": "USD",
           "priceSpecification": {
-            "@type": "PriceSpecification",
+            "@type": "UnitPriceSpecification",
+            "price": "600.00",
             "priceCurrency": "USD",
-            "description": "Call 412-246-4662 for current pricing and availability"
+            "unitCode": "MON",
+            "unitText": "month",
+            "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}
           },
           "availability": "https://schema.org/InStock",
           "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"},
@@ -138,18 +142,22 @@
         "@type": "Product",
         "@id": "https://oliversq.com/#standard-bay",
         "name": "Standard Storage Bay (Units 12-15) - 580 sq ft",
-        "description": "580 sq ft drive-up storage bay (40 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for cars, motorcycles, smaller boats, contractor tools, and small business storage in Uniontown, PA.",
+        "description": "580 sq ft drive-up storage bay (40 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for cars, motorcycles, smaller boats, contractor tools, and small business storage in Uniontown, PA. Starting at $400/month.",
         "category": "Self Storage Unit",
         "brand": {"@type": "Brand", "name": "Oliver Square"},
         "image": "https://oliversq.com/interior.jpg",
         "offers": {
           "@type": "Offer",
           "url": "https://oliversq.com/#contact",
+          "price": "400.00",
           "priceCurrency": "USD",
           "priceSpecification": {
-            "@type": "PriceSpecification",
+            "@type": "UnitPriceSpecification",
+            "price": "400.00",
             "priceCurrency": "USD",
-            "description": "Call 412-246-4662 for current pricing and availability"
+            "unitCode": "MON",
+            "unitText": "month",
+            "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}
           },
           "availability": "https://schema.org/InStock",
           "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"},
@@ -174,7 +182,7 @@
             "name": "How much does storage cost at Oliver Square?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pricing varies by unit size and lease term. Large bays (870 sq ft) and standard bays (580 sq ft) are available with flexible month-to-month or long-term leases. Call 412-246-4662 or email info@3riversrentals.com for current rates and availability."
+              "text": "Large bays (870 sq ft, 60 ft deep) start at $600/month. Standard bays (580 sq ft, 40 ft deep) start at $400/month. All bays include automatic doors, LED lighting, electrical service, pin pad access, and site-wide security cameras. Long-term and multi-bay discounts available — call 412-246-4662 for details."
             }
           },
           {
@@ -434,6 +442,10 @@
               <h4 class="text-xl font-bold text-white">Large Bays</h4>
               <span class="text-xs font-semibold px-2 py-1 bg-green-700 text-green-100 rounded">Units 1–11</span>
             </div>
+            <div class="mb-4 pb-4 border-b border-green-700">
+              <p class="text-4xl font-bold text-white">$600<span class="text-lg font-normal text-green-200">/mo</span></p>
+              <p class="text-xs uppercase tracking-wider text-green-200 mt-1">Starting rate</p>
+            </div>
             <div class="grid grid-cols-3 gap-2 mb-4 text-center">
               <div>
                 <p class="text-3xl font-bold text-white">60<span class="text-lg">′</span></p>
@@ -456,6 +468,10 @@
             <div class="flex items-baseline justify-between mb-4">
               <h4 class="text-xl font-bold text-white">Standard Bays</h4>
               <span class="text-xs font-semibold px-2 py-1 bg-green-700 text-green-100 rounded">Units 12–15</span>
+            </div>
+            <div class="mb-4 pb-4 border-b border-green-700">
+              <p class="text-4xl font-bold text-white">$400<span class="text-lg font-normal text-green-200">/mo</span></p>
+              <p class="text-xs uppercase tracking-wider text-green-200 mt-1">Starting rate</p>
             </div>
             <div class="grid grid-cols-3 gap-2 mb-4 text-center">
               <div>
@@ -562,7 +578,7 @@
       <div class="space-y-4">
         <details class="bg-white rounded-lg border border-stone-200 p-6 group">
           <summary class="font-semibold text-lg text-stone-900 cursor-pointer">How much does storage cost at Oliver Square?</summary>
-          <p class="mt-3 text-stone-700">Pricing varies by unit size and lease term. Large bays (870 sq ft) and standard bays (580 sq ft) are available with flexible month-to-month or long-term leases. Call <a href="tel:412-246-4662" class="text-green-800 hover:text-green-900 font-medium">412-246-4662</a> or email <a href="mailto:info@3riversrentals.com" class="text-green-800 hover:text-green-900 font-medium">info@3riversrentals.com</a> for current rates.</p>
+          <p class="mt-3 text-stone-700"><strong>Large bays (870 sq ft)</strong> start at <strong>$600/month</strong>. <strong>Standard bays (580 sq ft)</strong> start at <strong>$400/month</strong>. All bays include automatic doors, LED lighting, electrical service, pin pad access, and site-wide security cameras. Long-term and multi-bay discounts available — call <a href="tel:412-246-4662" class="text-green-800 hover:text-green-900 font-medium">412-246-4662</a> or email <a href="mailto:info@3riversrentals.com" class="text-green-800 hover:text-green-900 font-medium">info@3riversrentals.com</a>.</p>
         </details>
         <details class="bg-white rounded-lg border border-stone-200 p-6 group">
           <summary class="font-semibold text-lg text-stone-900 cursor-pointer">What is the largest vehicle I can store at Oliver Square?</summary>
