@@ -10,6 +10,14 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Oliver Square" />
 
+  <!-- Favicon + app icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#14532d" />
+
+  <!-- Preload hero image for faster LCP -->
+  <link rel="preload" as="image" href="aerial-hero.jpg" fetchpriority="high" />
+
   <!-- Geo tags for local SEO -->
   <meta name="geo.region" content="US-PA" />
   <meta name="geo.placename" content="Uniontown" />
@@ -23,11 +31,16 @@
   <meta property="og:url" content="https://oliversq.com/" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Oliver Square" />
+  <meta property="og:image" content="https://oliversq.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aerial view of Oliver Square shopping plaza and storage units in Uniontown, PA" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Storage Units & Contractor Bays in Uniontown, PA | Oliver Square" />
   <meta name="twitter:description" content="Secure storage units and contractor bays for rent in Uniontown, PA. Call 412-246-4662." />
+  <meta name="twitter:image" content="https://oliversq.com/og-image.jpg" />
 
   <!-- LocalBusiness + SelfStorage Schema (JSON-LD) -->
   <script type="application/ld+json">
@@ -43,7 +56,7 @@
         "telephone": "+1-412-246-4662",
         "email": "info@3riversrentals.com",
         "priceRange": "$$",
-        "image": "https://oliversq.com/og-image.jpg",
+        "image": ["https://oliversq.com/og-image.jpg", "https://oliversq.com/aerial-hero.jpg", "https://oliversq.com/exterior-open.jpg", "https://oliversq.com/interior.jpg"],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "6 Oliver Road",
@@ -90,8 +103,104 @@
         }
       },
       {
+        "@type": "Product",
+        "@id": "https://oliversq.com/#large-bay",
+        "name": "Large Storage Bay (Units 1-11) - 870 sq ft",
+        "description": "870 sq ft drive-up storage bay (60 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for boats, RVs, work trucks with trailers, and commercial storage in Uniontown, PA.",
+        "category": "Self Storage Unit",
+        "brand": {"@type": "Brand", "name": "Oliver Square"},
+        "image": "https://oliversq.com/depth.jpg",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://oliversq.com/#contact",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "description": "Call 412-246-4662 for current pricing and availability"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"},
+          "seller": {"@id": "https://oliversq.com/#storage"}
+        },
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Depth", "value": "60 ft"},
+          {"@type": "PropertyValue", "name": "Width", "value": "14.5 ft"},
+          {"@type": "PropertyValue", "name": "Area", "value": "870 sq ft"},
+          {"@type": "PropertyValue", "name": "Door Type", "value": "Automatic with opener"},
+          {"@type": "PropertyValue", "name": "Lighting", "value": "LED"},
+          {"@type": "PropertyValue", "name": "Electrical", "value": "Yes"},
+          {"@type": "PropertyValue", "name": "Access", "value": "Pin pad keyless entry"},
+          {"@type": "PropertyValue", "name": "Security", "value": "Site-wide camera system"}
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://oliversq.com/#standard-bay",
+        "name": "Standard Storage Bay (Units 12-15) - 580 sq ft",
+        "description": "580 sq ft drive-up storage bay (40 ft deep x 14.5 ft wide) with automatic door opener, LED lighting, electrical service, and pin pad access. Ideal for cars, motorcycles, smaller boats, contractor tools, and small business storage in Uniontown, PA.",
+        "category": "Self Storage Unit",
+        "brand": {"@type": "Brand", "name": "Oliver Square"},
+        "image": "https://oliversq.com/interior.jpg",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://oliversq.com/#contact",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "USD",
+            "description": "Call 412-246-4662 for current pricing and availability"
+          },
+          "availability": "https://schema.org/InStock",
+          "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"},
+          "seller": {"@id": "https://oliversq.com/#storage"}
+        },
+        "additionalProperty": [
+          {"@type": "PropertyValue", "name": "Depth", "value": "40 ft"},
+          {"@type": "PropertyValue", "name": "Width", "value": "14.5 ft"},
+          {"@type": "PropertyValue", "name": "Area", "value": "580 sq ft"},
+          {"@type": "PropertyValue", "name": "Door Type", "value": "Automatic with opener"},
+          {"@type": "PropertyValue", "name": "Lighting", "value": "LED"},
+          {"@type": "PropertyValue", "name": "Electrical", "value": "Yes"},
+          {"@type": "PropertyValue", "name": "Access", "value": "Pin pad keyless entry"},
+          {"@type": "PropertyValue", "name": "Security", "value": "Site-wide camera system"}
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does storage cost at Oliver Square?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing varies by unit size and lease term. Large bays (870 sq ft) and standard bays (580 sq ft) are available with flexible month-to-month or long-term leases. Call 412-246-4662 or email info@3riversrentals.com for current rates and availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the largest vehicle I can store at Oliver Square?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our large bays (Units 1-11) are 60 feet deep by 14.5 feet wide, easily accommodating full-size boats, Class A and Class C RVs, fifth-wheel trailers, work trucks with trailers attached, and long-bed vehicles in a single bay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer climate-controlled storage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our storage bays are not climate-controlled, but they are fully enclosed, weather-protected, and include electrical service. Electrical access lets you run a dehumidifier, battery tender, or space heater if needed for specific storage requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I access my storage unit after hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every storage bay has pin pad keyless access, so you can reach your unit anytime. Our site-wide security camera system monitors the property 24/7 for added peace of mind."
+            }
+          },
           {
             "@type": "Question",
             "name": "Do you have storage units available for rent in Uniontown, PA?",
@@ -154,7 +263,7 @@
   }
   </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -220,7 +329,7 @@
           </p>
         </div>
         <div class="md:col-span-2">
-          <img src="sign.jpg" alt="Oliver Square Plaza sign on Oliver Road in Uniontown, PA showing tenant directory" class="w-full rounded-lg shadow-md" loading="lazy" />
+          <img src="sign.jpg" width="900" height="1200" alt="Oliver Square Plaza sign on Oliver Road in Uniontown, PA showing tenant directory" class="w-full rounded-lg shadow-md" loading="lazy" />
         </div>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 text-center">
@@ -392,15 +501,15 @@
       <!-- Photo gallery -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mb-12">
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="exterior-open.jpg" alt="Row of storage units and contractor bays at Oliver Square in Uniontown, PA" class="w-full h-56 object-cover" loading="lazy" />
+          <img src="exterior-open.jpg" width="1100" height="1467" alt="Row of storage units and contractor bays at Oliver Square in Uniontown, PA" class="w-full h-56 object-cover" loading="lazy" />
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">Drive-up access — pull straight in with trucks, trailers, boats, or RVs</figcaption>
         </figure>
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="interior.jpg" alt="Interior of a storage bay at Oliver Square showing automatic door opener and LED lighting" class="w-full h-56 object-cover" loading="lazy" />
+          <img src="interior.jpg" width="1100" height="1467" alt="Interior of a storage bay at Oliver Square showing automatic door opener and LED lighting" class="w-full h-56 object-cover" loading="lazy" />
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">Every bay includes an automatic door opener, LED lighting, and electrical</figcaption>
         </figure>
         <figure class="rounded-lg overflow-hidden border-2 border-green-700">
-          <img src="depth.jpg" alt="Open 870 sq ft storage bay showing 60 foot depth ideal for boats, RVs, and vehicles" class="w-full h-56 object-cover" loading="lazy" />
+          <img src="depth.jpg" width="1100" height="1467" alt="Open 870 sq ft storage bay showing 60 foot depth ideal for boats, RVs, and vehicles" class="w-full h-56 object-cover" loading="lazy" />
           <figcaption class="bg-green-950 text-green-100 text-sm p-3 text-center">60-ft-deep bays easily fit boats, RVs, work trucks, and trailers</figcaption>
         </figure>
       </div>
@@ -451,6 +560,22 @@
         <p class="text-lg text-stone-600">Common questions about renting storage units and retail space at Oliver Square.</p>
       </div>
       <div class="space-y-4">
+        <details class="bg-white rounded-lg border border-stone-200 p-6 group">
+          <summary class="font-semibold text-lg text-stone-900 cursor-pointer">How much does storage cost at Oliver Square?</summary>
+          <p class="mt-3 text-stone-700">Pricing varies by unit size and lease term. Large bays (870 sq ft) and standard bays (580 sq ft) are available with flexible month-to-month or long-term leases. Call <a href="tel:412-246-4662" class="text-green-800 hover:text-green-900 font-medium">412-246-4662</a> or email <a href="mailto:info@3riversrentals.com" class="text-green-800 hover:text-green-900 font-medium">info@3riversrentals.com</a> for current rates.</p>
+        </details>
+        <details class="bg-white rounded-lg border border-stone-200 p-6 group">
+          <summary class="font-semibold text-lg text-stone-900 cursor-pointer">What is the largest vehicle I can store at Oliver Square?</summary>
+          <p class="mt-3 text-stone-700">Our large bays (Units 1-11) are 60 feet deep by 14.5 feet wide, easily accommodating full-size boats, Class A and Class C RVs, fifth-wheel trailers, work trucks with trailers attached, and long-bed vehicles in a single bay.</p>
+        </details>
+        <details class="bg-white rounded-lg border border-stone-200 p-6 group">
+          <summary class="font-semibold text-lg text-stone-900 cursor-pointer">Do you offer climate-controlled storage?</summary>
+          <p class="mt-3 text-stone-700">Our storage bays are not climate-controlled, but they are fully enclosed, weather-protected, and include electrical service. Electrical access lets you run a dehumidifier, battery tender, or space heater if needed.</p>
+        </details>
+        <details class="bg-white rounded-lg border border-stone-200 p-6 group">
+          <summary class="font-semibold text-lg text-stone-900 cursor-pointer">How do I access my storage unit after hours?</summary>
+          <p class="mt-3 text-stone-700">Every storage bay has pin pad keyless access, so you can reach your unit anytime. Our site-wide security camera system monitors the property 24/7 for added peace of mind.</p>
+        </details>
         <details class="bg-white rounded-lg border border-stone-200 p-6 group" open>
           <summary class="font-semibold text-lg text-stone-900 cursor-pointer">Do you have storage units available for rent in Uniontown, PA?</summary>
           <p class="mt-3 text-stone-700">Yes. Oliver Square offers 20 secure storage units and contractor bays for rent at 6 Oliver Road, Uniontown, PA 15401. Every bay features automatic doors with openers, LED lighting, electrical service, pin pad access, and is covered by our site-wide security camera system. Call 412-246-4662 for current availability and pricing.</p>
@@ -541,7 +666,7 @@
             <input type="tel" name="phone" placeholder="Phone Number *" required
               class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
           </div>
-          <input type="email" name="email" placeholder="Email Address *" required
+          <input type="email" name="email" placeholder="Email Address"
             class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700">
           <textarea name="message" rows="4" placeholder="Tell us about your business and space requirements..." required
             class="w-full px-4 py-3 bg-stone-700 border border-stone-600 rounded text-white placeholder-stone-400 focus:outline-none focus:border-green-700"></textarea>

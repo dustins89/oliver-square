@@ -1,0 +1,23 @@
+{
+  "name": "oliver-square",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustins89/oliver-square.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustins89/oliver-square/issues"
+  },
+  "homepage": "https://github.com/dustins89/oliver-square#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

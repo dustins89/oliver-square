@@ -7,6 +7,11 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://oliversq.com/og-image.jpg</image:loc>
+      <image:title>Oliver Square branded social preview image</image:title>
+      <image:caption>Oliver Square shopping plaza — storage units, contractor bays, and retail in Uniontown, PA</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://oliversq.com/aerial-hero.jpg</image:loc>
       <image:title>Oliver Square aerial view — shopping plaza in Uniontown, PA</image:title>
       <image:caption>Aerial drone photo of Oliver Square plaza at 6 Oliver Road, Uniontown, PA 15401</image:caption>
