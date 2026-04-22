@@ -84,7 +84,15 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
           "closes": "17:00"
-        }
+        },
+        "paymentAccepted": ["Cash", "Check", "Credit Card", "ACH"],
+        "currenciesAccepted": "USD",
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=6+Oliver+Rd+Uniontown+PA+15401",
+        "logo": "https://oliversq.com/favicon.svg",
+        "slogan": "Secure storage, contractor bays, and retail space in the heart of Uniontown",
+        "knowsAbout": ["Self storage", "RV storage", "Boat storage", "Car storage", "Contractor bays", "Vehicle storage", "Commercial leasing", "Retail leasing"],
+        "parentOrganization": {"@id": "https://oliversq.com/#3-rivers-rentals"},
+        "sameAs": []
       },
       {
         "@type": "ShoppingCenter",
@@ -175,6 +183,60 @@
         ]
       },
       {
+        "@type": "WebSite",
+        "@id": "https://oliversq.com/#website",
+        "url": "https://oliversq.com/",
+        "name": "Oliver Square",
+        "description": "Storage units, contractor bays, boat/RV/car storage, and retail suites in Uniontown, PA.",
+        "publisher": {"@id": "https://oliversq.com/#3-rivers-rentals"},
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://oliversq.com/#3-rivers-rentals",
+        "name": "3 Rivers Rentals",
+        "url": "https://oliversq.com/",
+        "email": "info@3riversrentals.com",
+        "telephone": "+1-412-246-4662",
+        "description": "Property management company operating Oliver Square in Uniontown, PA — including retail suites, office space, and secure storage / contractor bays.",
+        "subOrganization": [
+          {"@id": "https://oliversq.com/#storage"},
+          {"@id": "https://oliversq.com/#plaza"}
+        ],
+        "sameAs": []
+      },
+      {
+        "@type": "Service",
+        "@id": "https://oliversq.com/#service-self-storage",
+        "serviceType": "Self Storage Rental",
+        "name": "Self Storage & Contractor Bay Rental",
+        "description": "Monthly and long-term rental of 580 sq ft and 870 sq ft drive-up storage bays in Uniontown, PA. Every bay includes automatic door opener, LED lighting, electrical service, pin pad access, and site-wide security cameras.",
+        "provider": {"@id": "https://oliversq.com/#storage"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"},
+        "offers": [
+          {"@id": "https://oliversq.com/#large-bay"},
+          {"@id": "https://oliversq.com/#standard-bay"}
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://oliversq.com/#service-vehicle-storage",
+        "serviceType": "Vehicle Storage",
+        "name": "Boat, RV & Car Storage in Uniontown, PA",
+        "description": "Secure indoor storage for boats, RVs, campers, motorcycles, and classic cars. Automatic doors with openers, LED lighting, electrical service for battery tenders, pin pad access, and site-wide security cameras.",
+        "provider": {"@id": "https://oliversq.com/#storage"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://oliversq.com/#service-commercial-leasing",
+        "serviceType": "Commercial Real Estate Leasing",
+        "name": "Retail & Office Space Leasing at Oliver Square",
+        "description": "Retail suites and office space for lease at Oliver Square, a 20-unit, 88,400 sq ft shopping plaza in Uniontown, PA. Diverse tenant mix, ample parking, and high-visibility signage on Oliver Road.",
+        "provider": {"@id": "https://oliversq.com/#plaza"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"}
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": [
           {
@@ -198,7 +260,7 @@
             "name": "Do you offer climate-controlled storage?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our storage bays are not climate-controlled, but they are fully enclosed, weather-protected, and include electrical service. Electrical access lets you run a dehumidifier, battery tender, or space heater if needed for specific storage requirements."
+              "text": "Our storage bays are not climate-controlled, but they are fully enclosed and weather-protected. Electrical service is provided for items such as battery tenders and trickle chargers. For safety, space heaters, dehumidifiers, and open-flame devices are not permitted inside storage bays."
             }
           },
           {
@@ -586,7 +648,7 @@
         </details>
         <details class="bg-white rounded-lg border border-stone-200 p-6 group">
           <summary class="font-semibold text-lg text-stone-900 cursor-pointer">Do you offer climate-controlled storage?</summary>
-          <p class="mt-3 text-stone-700">Our storage bays are not climate-controlled, but they are fully enclosed, weather-protected, and include electrical service. Electrical access lets you run a dehumidifier, battery tender, or space heater if needed.</p>
+          <p class="mt-3 text-stone-700">Our storage bays are not climate-controlled, but they are fully enclosed and weather-protected. Electrical service is provided for items such as battery tenders and trickle chargers. For safety, space heaters, dehumidifiers, and open-flame devices are not permitted inside storage bays.</p>
         </details>
         <details class="bg-white rounded-lg border border-stone-200 p-6 group">
           <summary class="font-semibold text-lg text-stone-900 cursor-pointer">How do I access my storage unit after hours?</summary>
