@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://oliversq.com/</loc>
+    <loc>https://www.oliversq.com/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://oliversq.com/og-image.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/og-image.jpg</image:loc>
       <image:title>Oliver Square branded social preview image</image:title>
       <image:caption>Oliver Square shopping plaza — storage units, contractor bays, and retail in Uniontown, PA</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://oliversq.com/aerial-hero.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/aerial-hero.jpg</image:loc>
       <image:title>Oliver Square aerial view — shopping plaza in Uniontown, PA</image:title>
       <image:caption>Aerial drone photo of Oliver Square plaza at 6 Oliver Road, Uniontown, PA 15401</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://oliversq.com/exterior-open.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/exterior-open.jpg</image:loc>
       <image:title>Drive-up contractor bay with automatic door</image:title>
       <image:caption>Storage unit with automatic door opener, drive-up access for boats, RVs, and trucks</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://oliversq.com/interior.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/interior.jpg</image:loc>
       <image:title>Interior of a storage bay showing automatic door opener and LED lighting</image:title>
       <image:caption>Every bay includes automatic door opener, LED lighting, and electrical service</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://oliversq.com/depth.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/depth.jpg</image:loc>
       <image:title>870 sq ft storage bay showing 60 foot depth</image:title>
       <image:caption>Units 1-11 are 60 ft deep by 14.5 ft wide — ideal for boats, RVs, and trailers</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://oliversq.com/sign.jpg</image:loc>
+      <image:loc>https://www.oliversq.com/sign.jpg</image:loc>
       <image:title>Oliver Square Plaza pylon sign</image:title>
       <image:caption>Oliver Square Plaza sign on Oliver Road in Uniontown, PA</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://oliversq.com/rv-storage/</loc>
+    <loc>https://www.oliversq.com/rv-storage/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://oliversq.com/boat-storage/</loc>
+    <loc>https://www.oliversq.com/boat-storage/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://oliversq.com/contractor-bays/</loc>
+    <loc>https://www.oliversq.com/contractor-bays/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://oliversq.com/space-for-lease/</loc>
+    <loc>https://www.oliversq.com/space-for-lease/</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

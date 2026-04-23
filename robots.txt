@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oliversq.com/sitemap.xml
+Sitemap: https://www.oliversq.com/sitemap.xml

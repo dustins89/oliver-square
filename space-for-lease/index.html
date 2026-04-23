@@ -6,7 +6,7 @@
   <title>Space for Lease in Uniontown, PA | Oliver Square Plaza</title>
   <meta name="description" content="Retail and office space for lease at Oliver Square in Uniontown, PA. 88,400 sq ft plaza, 20 suites, Route 51 frontage, minutes from Route 43. Call 412-246-4662." />
   <meta name="keywords" content="retail space for lease Uniontown PA, office space for lease Uniontown, commercial space Fayette County, storefront lease Uniontown, commercial real estate Uniontown PA, retail plaza Uniontown, office for rent 15401, lease Route 51 Uniontown, commercial space near Route 43" />
-  <link rel="canonical" href="https://oliversq.com/space-for-lease/" />
+  <link rel="canonical" href="https://www.oliversq.com/space-for-lease/" />
   <meta name="robots" content="index, follow" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -19,8 +19,8 @@
   <meta property="og:title" content="Retail &amp; Office Space for Lease in Uniontown, PA | Oliver Square" />
   <meta property="og:description" content="Retail and office space for lease at Oliver Square, a 20-suite, 88,400 sq ft plaza on Route 51 with Route 43 (Mon-Fayette Expressway) access." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://oliversq.com/space-for-lease/" />
-  <meta property="og:image" content="https://oliversq.com/og-image.jpg" />
+  <meta property="og:url" content="https://www.oliversq.com/space-for-lease/" />
+  <meta property="og:image" content="https://www.oliversq.com/og-image.jpg" />
 
   <script type="application/ld+json">
   {
@@ -28,12 +28,12 @@
     "@graph": [
       {
         "@type": "RealEstateListing",
-        "@id": "https://oliversq.com/space-for-lease/#listing",
+        "@id": "https://www.oliversq.com/space-for-lease/#listing",
         "name": "Retail &amp; Office Space for Lease at Oliver Square",
-        "url": "https://oliversq.com/space-for-lease/",
+        "url": "https://www.oliversq.com/space-for-lease/",
         "description": "Retail and office space for lease at Oliver Square, an 88,400 sq ft shopping plaza in Uniontown, PA. 20 retail suites, Route 51 frontage, ample on-site parking, active tenant mix. Located minutes from PA Route 43 (Mon-Fayette Expressway).",
         "datePosted": "2026-04-22",
-        "image": "https://oliversq.com/og-image.jpg",
+        "image": "https://www.oliversq.com/og-image.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "6 Oliver Road",
@@ -65,18 +65,18 @@
       },
       {
         "@type": "Service",
-        "@id": "https://oliversq.com/space-for-lease/#service",
+        "@id": "https://www.oliversq.com/space-for-lease/#service",
         "name": "Retail &amp; Office Space Leasing in Uniontown, PA",
         "serviceType": "Commercial Real Estate Leasing",
         "description": "Retail and office space for lease at Oliver Square, a 20-suite shopping plaza in Uniontown, PA with Route 51 frontage and nearby Route 43 (Mon-Fayette Expressway) access.",
-        "provider": {"@id": "https://oliversq.com/space-for-lease/#listing"},
+        "provider": {"@id": "https://www.oliversq.com/space-for-lease/#listing"},
         "areaServed": {"@type": "AdministrativeArea", "name": "Fayette County, Pennsylvania"}
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://oliversq.com/"},
-          {"@type": "ListItem", "position": 2, "name": "Lease Space", "item": "https://oliversq.com/space-for-lease/"}
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.oliversq.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lease Space", "item": "https://www.oliversq.com/space-for-lease/"}
         ]
       },
       {
@@ -117,6 +117,20 @@
         <a href="/#contact" class="hover:text-green-800">Contact</a>
       </div>
       <a href="tel:412-246-4662" class="hidden md:inline-block bg-green-800 text-white text-sm font-medium px-4 py-2 rounded hover:bg-green-900">412-246-4662</a>
+      <button type="button" id="mobile-menu-toggle" class="md:hidden -mr-2 p-2 text-stone-700" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 bg-white">
+      <div class="px-6 py-4 flex flex-col gap-4 text-sm font-medium text-stone-700">
+        <a href="/" class="hover:text-green-800">Home</a>
+        <a href="/space-for-lease/" class="text-green-800 font-semibold">Lease Space</a>
+        <a href="/rv-storage/" class="hover:text-green-800">RV Storage</a>
+        <a href="/boat-storage/" class="hover:text-green-800">Boat Storage</a>
+        <a href="/contractor-bays/" class="hover:text-green-800">Contractor Bays</a>
+        <a href="/#contact" class="hover:text-green-800">Contact</a>
+        <a href="tel:412-246-4662" class="mt-1 bg-green-800 text-white text-center px-4 py-2 rounded hover:bg-green-900">Call 412-246-4662</a>
+      </div>
     </div>
   </nav>
 
@@ -306,6 +320,24 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("mobile-menu-toggle");
+      var menu = document.getElementById("mobile-menu");
+      if (!btn || !menu) return;
+      btn.addEventListener("click", function () {
+        var hidden = menu.classList.toggle("hidden");
+        btn.setAttribute("aria-expanded", (!hidden).toString());
+      });
+      menu.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") {
+          menu.classList.add("hidden");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+    })();
+  </script>
 
 </body>
 </html>
